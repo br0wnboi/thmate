@@ -31,5 +31,5 @@ STREAK=$(curl -s https://tryhackme.com/p/$USERNAME | grep -Po "hacker-green\"><\
 echo "Rank: 🏅$RANK"
 echo "Completed Rooms: 🚪$DONEROOMS"
 echo "Badges Earned: 👾$BADGE"
-echo "Level: 👾$LEVEL"
-echo "Streak: 👾$STREAK"
+echo "Level: 🛡$LEVEL"
+echo "Streak: 🔥$STREAK"
