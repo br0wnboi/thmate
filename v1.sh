@@ -25,7 +25,9 @@ echo -e "You're in the Top 🔝$TOPPERCENT%"
  
 BADGE=$(curl -s https://tryhackme.com/api/badges/get/$USERNAME | jq '.[] | .name' | wc -l)
 DONEROOMS=$(curl -s https://tryhackme.com/api/no-completed-rooms-public/$USERNAME)
+LEVEL=$(curl -s https://tryhackme.com/p/$USERNAME | grep -Po "<span class=\"level level\-(\d+)\">" | grep -Po "\d+")
 
 echo "Rank: 🏅$RANK"
 echo "Completed Rooms: 🚪$DONEROOMS"
 echo "Badges Earned: 👾$BADGE"
+echo "Level: 👾$LEVEL"
